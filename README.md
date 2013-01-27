@@ -10,4 +10,4 @@ Se eksempel her http://cv.trimn.net/ og http://cv.trimn.net/no/
 
 ##Hvor skal jeg starte?
 
-For å legge til ditt eget innhold ruller du ned til hvor <body> starter. Her kan du begynne å bytte ut gammelt innhold med ditt eget. 
+For å legge til ditt eget innhold ruller du ned til hvor **\<body\>** starter. Her kan du begynne å bytte ut gammelt innhold med ditt eget. 
