@@ -5,10 +5,34 @@
 		<meta charset="utf-8">
 		<title>Just an example - Curriculum Vitae</title>
 		<meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
-		<style type="text/css" media="all">
 
+		<script>
+		var education = [
+			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Informatikk', url:'http://ntnu.no/', from:'2009', to:'nå'}
+			, {title:'Ole-Vig Videregående Skole', description:'Medier og kommunikasjon', url:'http://ole-vig.vgs.no/', from:2006, to:2009}
+		]
+		, work = [
+			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentkontakt hos Institutt for datateknikk og informasjonsvitenskap', url:'http://ntnu.no/', from:'2012', to:'nå'}
+			, {title:'Opera Software ASA', description:'Intern, Product development services / Engineering Services', url:'http://opera.com/', from:'2012'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'', url:'http://ntnu.no/', from:'2009', to:'2011'}
+			, {title:'Opera Software ASA', description:'Intern, Engineering Services', url:'http://opera.com/', from:'2011'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentassistent i programmering grunnkurs. Hjelpe studenter med å komme i gang med Java-programmering.', url:'http://ntnu.no/', from:'2010'}
+			, {title:'Trollhetta AS, Trondheim', description:'Webutvikler, innleid for å oppdatere epcrc.org database og back-end PHP-system', url:'http://trollhetta.com/', from:'2010'}
+			, {title:'IQLTech, Trondheim', description:'PHP-utvikler, utvikle kulturdatabasens front- og back-end for Trondheim Kommune', url:'http://iqltech.no/', from:'2010'}
+			, {title:'Trondheim Kommune', description:'PHP-utvikler, utvikle og vedlikeholde brukerdatabaser hos Trondheim Kommune', url:'http://www.trondheim.kommune.no/', from:'2008', to:'2010'}
+		]
+		, other = [
+			{title:'Online, linjeforeningen for informatikk ved NTNU', description:'Nestleder', url:'http://online.ntnu.no/', from:'2012', to:'2013'}
+			, {title:'The Gathering (TG)', description:'Info:Systems - Utvikling og vedlikehold av gathering.org, wannabe.gathering.org og digitale informasjonstjenester for crew og deltakere.', url:'http://gathering.org/', from:'2011', to:'2012'}
+			, {title:'Online, linjeforeningen for informatikk ved NTNU', description:'Leder av fag- og kurskomiteen', url:'http://online.ntnu.no/', from:'2010', to:'2012'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Representant i <a href="http://www.studenttinget.no/">Studenttinget</a>', url:'http://ntnu.no/', from:'2011'}
+			, {title:'Bybussen', description:'En sanntidsapplikasjon for iPhone. Henter sanntidsdata for bussavganger i Trondheim - bybussen.trimini.no', url:'http://bybussen.trimini.no/', from:'...'}
+			, {title:'Junior Achievement Young Enterprise', description:'Bestått ungt entreprenørskapeksamen i samarbeid med Ungt entreprenørskap i Nord-Trøndelag og University of Cambridge', url:'http://www.ja-ye.org/', from:'2008'}
+		]
+		</script>
+
+		<style type="text/css" media="all">
 			/*-START DEFAULT--------------------------------------*/
-			
 			html, body, div, span, applet, object, iframe,
 			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 			a, abbr, acronym, address, big, cite, code,
@@ -30,9 +54,7 @@
 			blockquote:before, blockquote:after,
 			q:before, q:after { content: ''; content: none; }
 			table { border-collapse: collapse; border-spacing: 0; }
-			
 			/*-END-----------------------------------------------*/
-		
 			body { font: 12px/20px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; padding: 45px 0; }
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
@@ -54,16 +76,15 @@
 			.exp_list a:hover h3 { text-decoration: underline; }
 			table { margin: 0 auto; }
 			.cell_title { font-weight: bold; width: 140px; }
-		</style>
-		<style type="text/css" media="print">
-			body { background: #fff!important; }
+			@media print {
+				body { background: #fff!important; }
+			}
 		</style>
 	</head>
 	
 	<body>
 		<header>
 			<h1>Just an example</h1>
-			
 			<table>
 				<tr>
 					<td class="cell_title">Address</td>
@@ -92,53 +113,9 @@
 			</table>
 		</header>
 
-		<section id="education">
-			<h2><span>Education</span></h2>
-			<ul class="exp_list">
-				<li>
-					<span>2000</span>
-					<a href="http://school.com/"><h3>School</h3></a>
-					Subjects
-				</li>
-				
-				<li>
-					<span>2000 - 2000</span>
-					<a href="http://school.com/"><h3>School</h3></a>
-					Subjects
-				</li>
-			</ul>
-		</section>
-
-		<section id="work">
-			<h2><span>Work experience</span></h2>
-			<ul class="exp_list">
-
-				<li>
-					<span>2000 - 2000</span>
-					<a href="http://job.com/"><h3>Job 1</h3></a>
-					Description
-				</li>
-
-				<li>
-					<span>2000 - 2000</span>
-					<a href="http://job.com/"><h3>Job 2</h3></a>
-					Description
-				</li>
-			</ul>
-		</section>
-
-		<section id="other">
-			<h2><span>Other Experience</span></h2>
-			<ul class="exp_list">
-				
-				<li>
-					<span>2012 - present</span>
-					<a href="http://online.ntnu.no/"><h3>Online</h3></a>
-					Description
-				</li>
-
-			</ul>
-		</section>
+		<section id="education"></section>
+		<section id="work"></section>
+		<section id="other"></section>
 
 		<section id="qualifications">
 			<h2><span>Qualifications</span></h2>
@@ -171,5 +148,46 @@
 				<h4>References are provided on demand</h4>
 			</div>
 		</section>
+		
+		<script>
+		var cv = window.cv || {education:education,work:work,other:other,qualificaitons:{raw:'',items:[]}}
+		plug_info(cv)
+
+		function plug_info(o) {
+			var education = document.getElementById('education')
+			, work = document.getElementById('work')
+			, other = document.getElementById('other')
+
+			fill_section(education, 'Education', o.education)
+			fill_section(work, 'Work experience', o.work)
+			fill_section(other, 'Other Experience', o.other)
+		}
+
+		function fill_section(section, title, data) {
+			section.appendChild(add_title(title))
+			list = document.createElement('ul')
+			list.setAttribute('class', 'exp_list')
+
+			for (i = 0; i < data.length; i++) {
+				var li = document.createElement('li')
+				, span = document.createElement('span')
+				, url = document.createElement('a')
+				, description = document.createElement('p')
+
+				span.innerHTML = data[i]['to'] ? data[i]['from']+' - '+data[i]['to'] : data[i]['from']
+				url.setAttribute('href', data[i]['url'])
+				url.innerHTML = '<h3>'+data[i]['title']+'</h3>'
+				description.innerHTML = data[i]['description']
+				li.appendChild(span), li.appendChild(url), li.appendChild(description), list.appendChild(li)
+			}
+			section.appendChild(list)
+		}
+
+		function add_title(text) {
+			var title = document.createElement('h2')
+			title.innerHTML = '<span>'+text+'</span>'
+			return title
+		}
+		</script>
 	</body>
 </html>
