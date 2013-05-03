@@ -10,4 +10,6 @@ Se eksempel her http://cv.trimn.net/ og http://cv.trimn.net/no/
 
 ##Hvor skal jeg starte?
 
-For å legge til ditt eget innhold ruller du ned til hvor **\<body\>** starter. Her kan du begynne å bytte ut gammelt innhold med ditt eget. 
+Nytt i siste oppdatering er at man nå kan legge inn informasjon som JavaScript-objekter øverst i dokumentet. Her finnes det tre bolker "education", "work" og "other". Disse speiler da "utdanning", "arbeidserfaring" og "annet" i selve CV-en. Informasjon som legges automagisk inn i siden når den lastes.
+
+Skulle du ønske å bruke koden, men ønsker å benytte det gamle utseende? Fjern gjerne CSS-koden som ligger mellom v2.0 markeringene, og deretter lenke til **v1.css** som ligger i **themes**-mappen.
