@@ -6,6 +6,9 @@
 		<title>Just an example - Curriculum Vitae</title>
 		<meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
 		<style type="text/css" media="all">
+
+			/*-START DEFAULT--------------------------------------*/
+			
 			html, body, div, span, applet, object, iframe,
 			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 			a, abbr, acronym, address, big, cite, code,
@@ -30,10 +33,11 @@
 			
 			/*-END-----------------------------------------------*/
 		
-			body { font: 12px/20px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; }
+			body { font: 12px/20px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; padding: 45px 0; }
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
-			#container { width: 680px; margin: 0 auto; padding: 45px 30px; }
+			header { margin: 0 auto;  }
+			section { width: 680px; margin: 0 auto; }
 			.non_list_content { margin: 0 0 0 25px; }
 			h1 { font-family: Georgia, Serif; font-size: 34px; text-align: center; padding: 0 0 45px 0; }
 			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
@@ -52,14 +56,12 @@
 			.cell_title { font-weight: bold; width: 140px; }
 		</style>
 		<style type="text/css" media="print">
-			body {
-				background: #fff!important;
-			}
+			body { background: #fff!important; }
 		</style>
 	</head>
 	
 	<body>
-		<div id="container">
+		<header>
 			<h1>Just an example</h1>
 			
 			<table>
@@ -88,86 +90,86 @@
 					</td>
 				</tr>
 			</table>
-						
+		</header>
+
+		<section id="education">
 			<h2><span>Education</span></h2>
-				<ul class="exp_list">
-					<li>
-						<span>2000</span>
-						<a href="http://school.com/"><h3>School</h3></a>
-						Subjects
-					</li>
-					
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://school.com/"><h3>School</h3></a>
-						Subjects
-					</li>
-				</ul>
-				  
+			<ul class="exp_list">
+				<li>
+					<span>2000</span>
+					<a href="http://school.com/"><h3>School</h3></a>
+					Subjects
+				</li>
+				
+				<li>
+					<span>2000 - 2000</span>
+					<a href="http://school.com/"><h3>School</h3></a>
+					Subjects
+				</li>
+			</ul>
+		</section>
+
+		<section id="work">
 			<h2><span>Work experience</span></h2>
-				<ul class="exp_list">
+			<ul class="exp_list">
 
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://job.com/"><h3>Job 1</h3></a>
-						Description
-					</li>
+				<li>
+					<span>2000 - 2000</span>
+					<a href="http://job.com/"><h3>Job 1</h3></a>
+					Description
+				</li>
 
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://job.com/"><h3>Job 2</h3></a>
-						Description
-					</li>
-					
+				<li>
+					<span>2000 - 2000</span>
+					<a href="http://job.com/"><h3>Job 2</h3></a>
+					Description
+				</li>
+			</ul>
+		</section>
 
-				</ul>
-				 
-			
-				
+		<section id="other">
 			<h2><span>Other Experience</span></h2>
-				<ul class="exp_list">
-					
-					<li>
-						<span>2012 - present</span>
-						<a href="http://online.ntnu.no/"><h3>Online</h3></a>
-						Description
-					</li>
+			<ul class="exp_list">
+				
+				<li>
+					<span>2012 - present</span>
+					<a href="http://online.ntnu.no/"><h3>Online</h3></a>
+					Description
+				</li>
+
+			</ul>
+		</section>
+
+		<section id="qualifications">
+			<h2><span>Qualifications</span></h2>
+			<div class="non_list_content">
+				<h4>Operating systems</h4>
+				<p>Experienced with <strong>Mac OS X</strong> (10.3 and newer), <strong>Windows</strong> (2000/XP/Vista/7) and <strong>Linux</strong> (Debian/Ubuntu)</p>
+			
+				<h4>Programming and markup languages</h4>
+				<ul>
+					<li>Perl</li>
+					<li>(X)HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
 
 				</ul>
 				
+				<h4>Spoken languages</h4>
+				<ul>
+					<li>Language 1 (fluent)</li>
+					<li>Language 2 (excellent)</li>
+				</ul>
 				
+				<h4>Written languages</h4>
+				<ul>
+					<li>Language 1 (excellent)</li>
+					<li>Language 2 (excellent)</li>
+				</ul>
 				
-			<h2><span>Qualifications</span></h2>
-				<div class="non_list_content">
-					<h4>Operating systems</h4>
-					<p>Experienced with <strong>Mac OS X</strong> (10.3 and newer), <strong>Windows</strong> (2000/XP/Vista/7) and <strong>Linux</strong> (Debian/Ubuntu)</p>
-				
-					<h4>Programming and markup languages</h4>
-					<ul>
-						<li>Perl</li>
-						<li>(X)HTML</li>
-						<li>CSS</li>
-						<li>JavaScript</li>
-
-					</ul>
-					
-					<h4>Spoken languages</h4>
-					<ul>
-						<li>Language 1 (fluent)</li>
-						<li>Language 2 (excellent)</li>
-					</ul>
-					
-					<h4>Written languages</h4>
-					<ul>
-						<li>Language 1 (excellent)</li>
-						<li>Language 2 (excellent)</li>
-					</ul>
-					
-					<h4>I have a driver's license of class B</h4>
-					<h4>References are provided on demand</h4>
-				</div>
-			
-			
-		</div>
+				<h4>I have a driver's license of class B</h4>
+				<h4>References are provided on demand</h4>
+			</div>
+		</section>
 	</body>
 </html>
