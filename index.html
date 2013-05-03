@@ -4,39 +4,72 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Just an example - Curriculum Vitae</title>
-		<meta name="viewport" content="width = device-width"> 
-		
+		<meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+
+		<script>
+		var education = [
+			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Informatikk', url:'http://ntnu.no/', from:'2009', to:'nå'}
+			, {title:'Ole-Vig Videregående Skole', description:'Medier og kommunikasjon', url:'http://ole-vig.vgs.no/', from:2006, to:2009}
+		]
+		, work = [
+			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentkontakt hos Institutt for datateknikk og informasjonsvitenskap', url:'http://ntnu.no/', from:'2012', to:'nå'}
+			, {title:'Opera Software ASA', description:'Intern, Product development services / Engineering Services', url:'http://opera.com/', from:'2012'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'', url:'http://ntnu.no/', from:'2009', to:'2011'}
+			, {title:'Opera Software ASA', description:'Intern, Engineering Services', url:'http://opera.com/', from:'2011'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentassistent i programmering grunnkurs. Hjelpe studenter med å komme i gang med Java-programmering.', url:'http://ntnu.no/', from:'2010'}
+			, {title:'Trollhetta AS, Trondheim', description:'Webutvikler, innleid for å oppdatere epcrc.org database og back-end PHP-system', url:'http://trollhetta.com/', from:'2010'}
+			, {title:'IQLTech, Trondheim', description:'PHP-utvikler, utvikle kulturdatabasens front- og back-end for Trondheim Kommune', url:'http://iqltech.no/', from:'2010'}
+			, {title:'Trondheim Kommune', description:'PHP-utvikler, utvikle og vedlikeholde brukerdatabaser hos Trondheim Kommune', url:'http://www.trondheim.kommune.no/', from:'2008', to:'2010'}
+		]
+		, other = [
+			{title:'Online, linjeforeningen for informatikk ved NTNU', description:'Nestleder', url:'http://online.ntnu.no/', from:'2012', to:'2013'}
+			, {title:'The Gathering (TG)', description:'Info:Systems - Utvikling og vedlikehold av gathering.org, wannabe.gathering.org og digitale informasjonstjenester for crew og deltakere.', url:'http://gathering.org/', from:'2011', to:'2012'}
+			, {title:'Online, linjeforeningen for informatikk ved NTNU', description:'Leder av fag- og kurskomiteen', url:'http://online.ntnu.no/', from:'2010', to:'2012'}
+			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Representant i <a href="http://www.studenttinget.no/">Studenttinget</a>', url:'http://ntnu.no/', from:'2011'}
+			, {title:'Bybussen', description:'En sanntidsapplikasjon for iPhone. Henter sanntidsdata for bussavganger i Trondheim - bybussen.trimini.no', url:'http://bybussen.trimini.no/', from:'...'}
+			, {title:'Junior Achievement Young Enterprise', description:'Bestått ungt entreprenørskapeksamen i samarbeid med Ungt entreprenørskap i Nord-Trøndelag og University of Cambridge', url:'http://www.ja-ye.org/', from:'2008'}
+		]
+		</script>
+
 		<style type="text/css" media="all">
-			html, body, div, span, applet, object, iframe,
-			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-			a, abbr, acronym, address, big, cite, code,
-			del, dfn, em, img, ins, kbd, q, s, samp,
-			small, strike, strong, sub, sup, tt, var,
-			b, u, i, center,
-			dl, dt, dd, ol, ul, li,
-			fieldset, form, label, legend,
-			table, caption, tbody, tfoot, thead, tr, th, td,
-			article, aside, canvas, details, embed, 
-			figure, figcaption, footer, header, hgroup, 
-			menu, nav, output, ruby, section, summary,
-			time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
-			article, aside, details, figcaption, figure, 
-			footer, header, hgroup, menu, nav, section { display: block; }
+			/*-START DEFAULT--------------------------------------*/
+			html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,em,img,small,strong,tt,dl,dt,dd,ol,ul,li,label,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,hgroup,menu,nav,output,section,time,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 			body { line-height:1; }
 			ol, ul { list-style:none; }
 			blockquote, q { quotes: none; }
 			blockquote:before, blockquote:after,
 			q:before, q:after { content: ''; content: none; }
 			table { border-collapse: collapse; border-spacing: 0; }
-			
 			/*-END-----------------------------------------------*/
-		
-			body { font: 12px/20px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; }
+
+			/*-START v2.0--------------------------------------*/
+			body { font: 11px/18px Verdana, Sans-serif; background: #efefef; color: #2f2f2f;  }
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
-			#container { width: 680px; margin: 0 auto; padding: 45px 30px; }
+			header {
+				width: 220px;
+				height: 200px;
+				position: fixed;
+				top: 50%;
+				margin-top: -100px;
+			}
+			#wrap0 { width: 900px; margin: 0 auto; background: transparent; }
+			#wrap1 { float: right; width: 620px; border-left: 1px solid #ddd; margin: 0 0 0 0; padding: 25px 0 25px 35px; }
+
+			#wrap0:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0;
+			}
+
+			section {  }
+
 			.non_list_content { margin: 0 0 0 25px; }
-			h1 { font-family: Georgia, Serif; font-size: 34px; text-align: center; padding: 0 0 45px 0; }
+			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; text-align: right; }
 			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
 			h2 span { border-top: 3px solid #000; padding: 1px 0 0 0; }
 			h3 { font-weight: bold; line-height: 20px; }
@@ -46,129 +79,123 @@
 			ul { margin: 0 0 0 25px; }
 			ul.exp_list li { list-style: none; margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 1px dotted #ccc; }
 			ul.exp_list li:last-child { margin: 0; border: none; }
-			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 11px; }
+			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 10px; }
 			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
 			.exp_list a:hover h3 { text-decoration: underline; }
-			table { margin: 0 auto; }
-			.cell_title { font-weight: bold; width: 140px; }
-		</style>
-		<style type="text/css" media="print">
-			body {
-				background: #fff!important;
+
+			ul.header_list { margin: 0; }
+			ul.header_list li { list-style: none; text-align: right; }
+			ul.header_list li span { font-weight: bold; }
+
+			td:first-child { font-weight: bold; width: 120px; }
+			/*-END v2.0--------------------------------------*/
+
+			@media print {
+				body { background: #fff!important; }
 			}
 		</style>
 	</head>
 	
 	<body>
-		<div id="container">
-			<h1>Just an example</h1>
-			
-			<table>
-				<tr>
-					<td class="cell_title">Address</td>
-					<td>Street 01, 0000 Place</td>
-				</tr>
-				<tr>
-					<td class="cell_title">Date of Birth</td>
-					<td>January 01, 2000</td>
-				</tr>
-				<tr>
-					<td class="cell_title">Phone</td>
-					<td>(+47) 999 99 99938</td>
-				</tr>
-				<tr>
-					<td class="cell_title">Email</td>
-					<td><a href="mailto:post@address.net">post@address.net</a></td>
-				</tr>
-				<tr>
-					<td class="cell_title">Other</td>
-					<td>
-						<a href="http://twitter.com/name/">Twitter</a><br>
+		<div id="wrap0">
+		<header>
+			<h1>Tri M. Nguyen</h1>
+			<ul class="header_list">
+				<li><span>Adresse:</span> Odd Brochmannsvei 149</li>
+				<li><span>Fødselsdato:</span> 18. mars 1990</li>
+				<li><span>Tlf.:</span> 466 93 738</li>
+				<li><span>Email:</span> mail@trimn.net</li>
+				<li><a href="http://twitter.com/name/">Twitter</a><br>
 						<a href="http://no.linkedin.com/in/name">LinkedIn</a><br>
-						<a href="http://github.com/name">Github</a>
-					</td>
-				</tr>
-			</table>
-						
-			<h2><span>Education</span></h2>
-				<ul class="exp_list">
-					<li>
-						<span>2000</span>
-						<a href="http://school.com/"><h3>School</h3></a>
-						Subjects
-					</li>
-					
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://school.com/"><h3>School</h3></a>
-						Subjects
-					</li>
-				</ul>
-				  
-			<h2><span>Work experience</span></h2>
-				<ul class="exp_list">
+						<a href="http://github.com/name">Github</a></li>
+			</ul>
+		</header>
 
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://job.com/"><h3>Job 1</h3></a>
-						Description
-					</li>
+		<div id="wrap1">
+			<section id="education"></section>
+			<section id="work"></section>
+			<section id="other"></section>
 
-					<li>
-						<span>2000 - 2000</span>
-						<a href="http://job.com/"><h3>Job 2</h3></a>
-						Description
-					</li>
-					
-
-				</ul>
-				 
-			
-				
-			<h2><span>Other Experience</span></h2>
-				<ul class="exp_list">
-					
-					<li>
-						<span>2012 - present</span>
-						<a href="http://online.ntnu.no/"><h3>Online</h3></a>
-						Description
-					</li>
-
-				</ul>
-				
-				
-				
-			<h2><span>Qualifications</span></h2>
+			<section id="qualifications">
+				<h2><span>Kvalifikasjoner</span></h2>
 				<div class="non_list_content">
-					<h4>Operating systems</h4>
-					<p>Experienced with <strong>Mac OS X</strong> (10.3 and newer), <strong>Windows</strong> (2000/XP/Vista/7) and <strong>Linux</strong> (Debian/Ubuntu)</p>
+					<h4>Operativsystemer</h4>
+					<p>Godt kjent med <strong>Mac OS X</strong>, <strong>Windows</strong> og <strong>Linux</strong> </p>
 				
-					<h4>Programming and markup languages</h4>
+					<h4>Språk</h4>
 					<ul>
-						<li>Perl</li>
-						<li>(X)HTML</li>
-						<li>CSS</li>
 						<li>JavaScript</li>
-
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Objective C</li>
+						<li>Perl</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>Python (kjent og jobbet med, men lite brukt)</li>
+						<li>C# (kjent og jobbet med, men lite brukt)</li>
 					</ul>
 					
-					<h4>Spoken languages</h4>
+					<h4>Språk, muntlig</h4>
 					<ul>
-						<li>Language 1 (fluent)</li>
-						<li>Language 2 (excellent)</li>
+						<li>Norsk (Flytende)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamesisk (God)</li>
 					</ul>
 					
-					<h4>Written languages</h4>
+					<h4>Språk, skriftlig</h4>
 					<ul>
-						<li>Language 1 (excellent)</li>
-						<li>Language 2 (excellent)</li>
+						<li>Norsk (God)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamese (ok)</li>
 					</ul>
 					
-					<h4>I have a driver's license of class B</h4>
-					<h4>References are provided on demand</h4>
+					<h4>Førerkort: klasse B</h4>
+					<h4>Referanser oppgis ved behov</h4>
 				</div>
-			
-			
+
+			</section>
 		</div>
+		</div>
+		
+		<script>
+		var cv = window.cv || {education:education,work:work,other:other,qualificaitons:{raw:'',items:[]}}
+		plug_info(cv)
+
+		function plug_info(o) {
+			var education = document.getElementById('education')
+			, work = document.getElementById('work')
+			, other = document.getElementById('other')
+
+			fill_section(education, 'Utdanning', o.education)
+			fill_section(work, 'Arbeidserfaring', o.work)
+			fill_section(other, 'Annet', o.other)
+		}
+
+		function fill_section(section, title, data) {
+			section.appendChild(add_title(title))
+			list = document.createElement('ul')
+			list.setAttribute('class', 'exp_list')
+
+			for (i = 0; i < data.length; i++) {
+				var li = document.createElement('li')
+				, span = document.createElement('span')
+				, url = document.createElement('a')
+				, description = document.createElement('p')
+
+				span.innerHTML = data[i]['to'] ? data[i]['from']+' - '+data[i]['to'] : data[i]['from']
+				url.setAttribute('href', data[i]['url'])
+				url.innerHTML = '<h3>'+data[i]['title']+'</h3>'
+				description.innerHTML = data[i]['description']
+				li.appendChild(span), li.appendChild(url), li.appendChild(description), list.appendChild(li)
+			}
+			section.appendChild(list)
+		}
+
+		function add_title(text) {
+			var title = document.createElement('h2')
+			title.innerHTML = '<span>'+text+'</span>'
+			return title
+		}
+		</script>
 	</body>
 </html>
