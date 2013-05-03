@@ -33,7 +33,7 @@
 
 		<style type="text/css" media="all">
 			/*-START DEFAULT--------------------------------------*/
-			html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,em,img,small,strong,tt,dl,dt,dd,ol,ul,li,label,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,hgroup,menu,nav,output,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+			html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,em,img,small,strong,tt,dl,dt,dd,ol,ul,li,label,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,hgroup,menu,nav,output,section,time,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 			body { line-height:1; }
 			ol, ul { list-style:none; }
@@ -77,7 +77,7 @@
 			ul { margin: 0 0 0 25px; }
 			ul.exp_list li { list-style: none; margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 1px dotted #ccc; }
 			ul.exp_list li:last-child { margin: 0; border: none; }
-			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 11px; }
+			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 10px; }
 			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
 			.exp_list a:hover h3 { text-decoration: underline; }
 
@@ -113,35 +113,42 @@
 			<section id="other"></section>
 
 			<section id="qualifications">
-				<h2><span>Qualifications</span></h2>
+				<h2><span>Kvalifikasjoner</span></h2>
 				<div class="non_list_content">
-					<h4>Operating systems</h4>
-					<p>Experienced with <strong>Mac OS X</strong> (10.3 and newer), <strong>Windows</strong> (2000/XP/Vista/7) and <strong>Linux</strong> (Debian/Ubuntu)</p>
+					<h4>Operativsystemer</h4>
+					<p>Godt kjent med <strong>Mac OS X</strong>, <strong>Windows</strong> og <strong>Linux</strong> </p>
 				
-					<h4>Programming and markup languages</h4>
+					<h4>Språk</h4>
 					<ul>
-						<li>Perl</li>
-						<li>(X)HTML</li>
-						<li>CSS</li>
 						<li>JavaScript</li>
-
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Objective C</li>
+						<li>Perl</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>Python (kjent og jobbet med, men lite brukt)</li>
+						<li>C# (kjent og jobbet med, men lite brukt)</li>
 					</ul>
 					
-					<h4>Spoken languages</h4>
+					<h4>Språk, muntlig</h4>
 					<ul>
-						<li>Language 1 (fluent)</li>
-						<li>Language 2 (excellent)</li>
+						<li>Norsk (Flytende)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamesisk (God)</li>
 					</ul>
 					
-					<h4>Written languages</h4>
+					<h4>Språk, skriftlig</h4>
 					<ul>
-						<li>Language 1 (excellent)</li>
-						<li>Language 2 (excellent)</li>
+						<li>Norsk (God)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamese (ok)</li>
 					</ul>
 					
-					<h4>I have a driver's license of class B</h4>
-					<h4>References are provided on demand</h4>
+					<h4>Førerkort: klasse B</h4>
+					<h4>Referanser oppgis ved behov</h4>
 				</div>
+
 			</section>
 		</div>
 		</div>
@@ -155,9 +162,9 @@
 			, work = document.getElementById('work')
 			, other = document.getElementById('other')
 
-			fill_section(education, 'Education', o.education)
-			fill_section(work, 'Work experience', o.work)
-			fill_section(other, 'Other Experience', o.other)
+			fill_section(education, 'Utdanning', o.education)
+			fill_section(work, 'Arbeidserfaring', o.work)
+			fill_section(other, 'Annet', o.other)
 		}
 
 		function fill_section(section, title, data) {
