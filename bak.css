@@ -1,0 +1,21 @@
+body { font: 12px/20px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; padding: 45px 0; }
+			a { text-decoration: none; color: #495a80; }
+			a:hover { color: #AAA; }
+			header { margin: 0 auto;  }
+			section { width: 680px; margin: 0 auto; }
+			.non_list_content { margin: 0 0 0 25px; }
+			h1 { font-family: Georgia, Serif; font-size: 34px; text-align: center; padding: 0 0 45px 0; }
+			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
+			h2 span { border-top: 3px solid #000; padding: 1px 0 0 0; }
+			h3 { font-weight: bold; line-height: 20px; }
+			h3 a { font-weight: normal; font-size: 11px; margin: 0 0 0 0; }
+			h4 { font-weight: bold; margin: 10px 0 0 0; }
+			ul li { list-style: disc; }
+			ul { margin: 0 0 0 25px; }
+			ul.exp_list li { list-style: none; margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 1px dotted #ccc; }
+			ul.exp_list li:last-child { margin: 0; border: none; }
+			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 11px; }
+			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
+			.exp_list a:hover h3 { text-decoration: underline; }
+			table { margin: 0 auto; }
+			td:first-child { font-weight: bold; width: 140px; }
