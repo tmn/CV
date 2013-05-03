@@ -46,13 +46,13 @@
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
 			header {
-				width: 290px;
+				width: 220px;
 				height: 200px;
 				position: fixed;
 				top: 50%;
 				margin-top: -100px;
 			}
-			#wrap0 { width: 940px; margin: 0 auto; background: transparent; }
+			#wrap0 { width: 900px; margin: 0 auto; background: transparent; }
 			#wrap1 { float: right; width: 620px; border-left: 1px solid #ddd; margin: 0 0 0 0; padding: 25px 0 25px 35px; }
 
 			#wrap0:after {
@@ -67,7 +67,7 @@
 			section {  }
 
 			.non_list_content { margin: 0 0 0 25px; }
-			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; }
+			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; text-align: right; }
 			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
 			h2 span { border-top: 3px solid #000; padding: 1px 0 0 0; }
 			h3 { font-weight: bold; line-height: 20px; }
@@ -80,7 +80,10 @@
 			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 11px; }
 			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
 			.exp_list a:hover h3 { text-decoration: underline; }
-			
+
+			ul.header_list { margin: 0; }
+			ul.header_list li { list-style: none; text-align: right; }
+			ul.header_list li span { font-weight: bold; }
 
 			td:first-child { font-weight: bold; width: 120px; }
 			@media print {
@@ -93,32 +96,15 @@
 		<div id="wrap0">
 		<header>
 			<h1>Tri M. Nguyen</h1>
-			<table>
-				<tr>
-					<td>Address</td>
-					<td>Street 01, 0000 Place</td>
-				</tr>
-				<tr>
-					<td>Date of Birth</td>
-					<td>January 01, 2000</td>
-				</tr>
-				<tr>
-					<td>Phone</td>
-					<td>(+47) 999 99 99938</td>
-				</tr>
-				<tr>
-					<td>Email</td>
-					<td><a href="mailto:post@address.net">post@address.net</a></td>
-				</tr>
-				<tr>
-					<td>Other</td>
-					<td>
-						<a href="http://twitter.com/name/">Twitter</a><br>
+			<ul class="header_list">
+				<li><span>Adresse:</span> Odd Brochmannsvei 149</li>
+				<li><span>Fødselsdato:</span> 18. mars 1990</li>
+				<li><span>Tlf.:</span> 466 93 738</li>
+				<li><span>Email:</span> mail@trimn.net</li>
+				<li><a href="http://twitter.com/name/">Twitter</a><br>
 						<a href="http://no.linkedin.com/in/name">LinkedIn</a><br>
-						<a href="http://github.com/name">Github</a>
-					</td>
-				</tr>
-			</table>
+						<a href="http://github.com/name">Github</a></li>
+			</ul>
 		</header>
 
 		<div id="wrap1">
