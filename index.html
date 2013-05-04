@@ -48,20 +48,13 @@
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
 			header {
-				width: 220px;
-				height: 200px;
-				position: fixed;
-				top: 50%;
-				margin-top: -100px;
+				
 			}
-			#wrap0 { width: 900px; margin: 0 auto; background: transparent; }
-			#wrap1 { float: right; width: 620px; border-left: 1px solid #ddd; margin: 0 0 0 0; padding: 25px 0 25px 35px; }
+			#wrap0 { width: 900px; margin: 0 auto; }
 			#wrap0:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-
 			section {  }
-
 			.non_list_content { margin: 0 0 0 25px; }
-			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; text-align: right; }
+			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; }
 			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
 			h2 span { border-top: 3px solid #000; padding: 1px 0 0 0; }
 			h3 { font-weight: bold; line-height: 20px; }
@@ -75,12 +68,38 @@
 			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
 			.exp_list a:hover h3 { text-decoration: underline; }
 
-			ul.header_list { margin: 0; }
-			ul.header_list li { list-style: none; text-align: right; }
+			ul.header_list li { list-style: none; padding: 0; }
 			ul.header_list li span { font-weight: bold; }
 
 			td:first-child { font-weight: bold; width: 120px; }
 			/*-END v2.0--------------------------------------*/
+			
+			@media screen and (min-width: 940px) {
+				header { position: fixed; top: 50%; margin-top: -100px; width: 220px; height: 200px; }
+				h1 { text-align: right; }
+				#wrap0 { width: 900px;  }
+				#wrap1 { float: right; width: 620px; border-left: 1px solid #ddd; margin: 0 0 0 0; padding: 25px 0 25px 35px; }
+				ul.header_list { margin: 0; }
+				ul.header_list li { text-align: right; }
+			}
+
+			@media screen and (max-width: 940px) {
+				h1 { text-align: center; }
+				header { position: static; padding: 40px 0 0 0; }
+				#wrap0 { width: 650px; }
+
+				ul.header_list { margin: 0 auto; width: 300px; padding: 0 0 0 1em; }
+				ul.header_list li span { font-weight: bold; width: 140px; display: block; float:left; }
+				ul.header_list li:last-child { margin: 0 0 0 140px; }
+			}
+
+			@media screen and (max-width: 758px) {
+				#wrap0 { width: 500px; }
+			}
+
+			@media screen and (max-width: 524px) {
+				#wrap0 { width: 310px; }
+			}
 
 			@media print {
 				body { background: #fff!important; }
