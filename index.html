@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,166 +7,193 @@
 
 		<script>
 		var education = [
-			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Informatikk', url:'http://ntnu.no/', from:'2009', to:'nå'}
-			, {title:'Ole-Vig Videregående Skole', description:'Medier og kommunikasjon', url:'http://ole-vig.vgs.no/', from:2006, to:2009}
-		]
-		, work = [
-			{title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentkontakt hos Institutt for datateknikk og informasjonsvitenskap', url:'http://ntnu.no/', from:'2012', to:'nå'}
-			, {title:'Opera Software ASA', description:'Intern, Product development services / Engineering Services', url:'http://opera.com/', from:'2012'}
-			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'', url:'http://ntnu.no/', from:'2009', to:'2011'}
-			, {title:'Opera Software ASA', description:'Intern, Engineering Services', url:'http://opera.com/', from:'2011'}
-			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Studentassistent i programmering grunnkurs. Hjelpe studenter med å komme i gang med Java-programmering.', url:'http://ntnu.no/', from:'2010'}
-			, {title:'Trollhetta AS, Trondheim', description:'Webutvikler, innleid for å oppdatere epcrc.org database og back-end PHP-system', url:'http://trollhetta.com/', from:'2010'}
-			, {title:'IQLTech, Trondheim', description:'PHP-utvikler, utvikle kulturdatabasens front- og back-end for Trondheim Kommune', url:'http://iqltech.no/', from:'2010'}
-			, {title:'Trondheim Kommune', description:'PHP-utvikler, utvikle og vedlikeholde brukerdatabaser hos Trondheim Kommune', url:'http://www.trondheim.kommune.no/', from:'2008', to:'2010'}
-		]
-		, other = [
-			{title:'Online, linjeforeningen for informatikk ved NTNU', description:'Nestleder', url:'http://online.ntnu.no/', from:'2012', to:'2013'}
-			, {title:'The Gathering (TG)', description:'Info:Systems - Utvikling og vedlikehold av gathering.org, wannabe.gathering.org og digitale informasjonstjenester for crew og deltakere.', url:'http://gathering.org/', from:'2011', to:'2012'}
-			, {title:'Online, linjeforeningen for informatikk ved NTNU', description:'Leder av fag- og kurskomiteen', url:'http://online.ntnu.no/', from:'2010', to:'2012'}
-			, {title:'Norges teknisk-naturvitenskapelige universitet', description:'Representant i <a href="http://www.studenttinget.no/">Studenttinget</a>', url:'http://ntnu.no/', from:'2011'}
-			, {title:'Bybussen', description:'En sanntidsapplikasjon for iPhone. Henter sanntidsdata for bussavganger i Trondheim - bybussen.trimini.no', url:'http://bybussen.trimini.no/', from:'...'}
-			, {title:'Junior Achievement Young Enterprise', description:'Bestått ungt entreprenørskapeksamen i samarbeid med Ungt entreprenørskap i Nord-Trøndelag og University of Cambridge', url:'http://www.ja-ye.org/', from:'2008'}
+			{
+				title: 'Norges teknisk-naturvitenskapelige universitet',
+				description: 'Informatikk',
+				url: 'http://ntnu.no/',
+				from: '2009',
+				to: 'nå'
+			},
+			{
+				title: 'Ole-Vig Videregående Skole',
+				description: 'Medier og kommunikasjon',
+				url: 'http://ole-vig.vgs.no/',
+				from: 2006,
+				to: 2009
+			}
+		],
+
+		work = [
+			{
+				title: 'Norges teknisk-naturvitenskapelige universitet',
+				description: 'Studentkontakt hos Institutt for datateknikk og informasjonsvitenskap',
+				url: 'http://ntnu.no/',
+				from: '2012',
+				to: 'nå'
+			},
+			{
+				title: 'Opera Software ASA',
+				description: 'Intern, Product development services / Engineering Services',
+				url: 'http://opera.com/',
+				from: '2012'
+			},
+			{
+				title: 'Norges teknisk-naturvitenskapelige universitet',
+				description: '',
+				url: 'http://ntnu.no/',
+				from: '2009',
+				to: '2011'
+			},
+			{
+				title: 'Opera Software ASA',
+				description: 'Intern, Engineering Services',
+				url: 'http://opera.com/',
+				from: '2011'
+			}
+		],
+
+		other = [
+			{
+				title: 'Online, linjeforeningen for informatikk ved NTNU',
+				description: 'Nestleder',
+				url: 'http://online.ntnu.no/',
+				from: '2012',
+				to: '2013'
+			},
+			{
+				title: 'The Gathering (TG)',
+				description: 'Info:Systems - Utvikling og vedlikehold av gathering.org, wannabe.gathering.org og digitale informasjonstjenester for crew og deltakere.',
+				url: 'http://gathering.org/',
+				from: '2011',
+				to: '2012'
+			},
+			{
+				title: 'Online, linjeforeningen for informatikk ved NTNU',
+				description: 'Leder av fag- og kurskomiteen',
+				url: 'http://online.ntnu.no/',
+				from: '2010',
+				to: '2012'
+			}
 		]
 		</script>
 
 		<style type="text/css" media="all">
 			/*-START DEFAULT--------------------------------------*/
-			html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,address,em,img,small,strong,tt,dl,dt,dd,ol,ul,li,label,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,hgroup,menu,nav,output,section,time,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
-			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-			body { line-height:1; }
-			ol, ul { list-style:none; }
-			blockquote, q { quotes: none; }
-			blockquote:before, blockquote:after,
-			q:before, q:after { content: ''; content: none; }
-			table { border-collapse: collapse; border-spacing: 0; }
+			html,body,div,span,object,h1,h2,h3,h4,p,a,address,img,small,strong,ul,li,footer,header,section { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+			footer,header,section { display: block; }
 			/*-END-----------------------------------------------*/
 
-			/*-START v2.0--------------------------------------*/
-			body { font: 11px/18px Verdana, Sans-serif; background: #efefef; color: #2f2f2f;  }
+			body { font: 12px/18px Verdana, Sans-serif; background: #efefef; color: #2f2f2f; padding: 45px 0; }
+
 			a { text-decoration: none; color: #495a80; }
 			a:hover { color: #AAA; }
-			header {
-				
-			}
-			#wrap0 {  margin: 0 auto; }
+
+			#wrap0 {  margin: 0 auto; max-width: 680px; min-width: 320px; padding: 0 20px; box-sizing: border-box; }
 			#wrap0:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
-			section {  }
+
+			address { margin: 0 auto; }
+			section { width: 100%; margin: 0 auto; }
+
 			.non_list_content { margin: 0 0 0 25px; }
-			h1 { font-family: Georgia, Serif; font-size: 34px; padding: 0 0 45px 0; }
+			h1 { font-family: Georgia, Serif; font-size: 34px; text-align: center; padding: 0 0 45px 0; }
 			h2 { font-weight: bold; margin: 25px 0 10px 0; border-top: 1px solid #000; }
 			h2 span { border-top: 3px solid #000; padding: 1px 0 0 0; }
 			h3 { font-weight: bold; line-height: 20px; }
 			h3 a { font-weight: normal; font-size: 11px; margin: 0 0 0 0; }
 			h4 { font-weight: bold; margin: 10px 0 0 0; }
-			ul li { list-style: disc; }
-			ul { margin: 0 0 0 25px; }
+
+			ul { list-style: disc; margin: 0 0 0 25px; }
+			ul ul { margin: 0 0 0 140px; }
+
 			ul.exp_list li { list-style: none; margin: 0 0 10px 0; padding: 0 0 10px 0; border-bottom: 1px dotted #ccc; }
 			ul.exp_list li:last-child { margin: 0; border: none; }
-			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 10px; }
-			.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
-			.exp_list a:hover h3 { text-decoration: underline; }
+			ul.exp_list li span { color: #aaa; margin: 0 15px 0 0; float: right; font-style: italic; font-size: 11px; }
+			ul.exp_list a h3 { display: block; font-weight: bold; color: #2f2f2f; }
+			ul.exp_list a:hover h3 { text-decoration: underline; }
 
-			ul.header_list li { list-style: none; padding: 0; }
-			ul.header_list li span { font-weight: bold; }
+			table { margin: 0 auto; }
+			td:first-child { font-weight: bold; width: 140px; }
 
-			td:first-child { font-weight: bold; width: 120px; }
-			/*-END v2.0--------------------------------------*/
-			
-			@media screen and (min-width: 940px) {
-				header { position: fixed; top: 50%; margin-top: -100px; width: 220px; height: 200px; }
-				h1 { text-align: right; }
-				#wrap0 { width: 900px;  }
-				#wrap1 { float: right; width: 620px; border-left: 1px solid #ddd; margin: 0 0 0 0; padding: 25px 0 25px 35px; }
-				ul.header_list { margin: 0; }
-				ul.header_list li { text-align: right; }
-			}
+			ul.header_list { margin: 0 auto; width: 310px;  }
+			ul.header_list li { list-style: none; padding:0;}
+			ul.header_list li span { font-weight: bold; width: 140px; display: block; float:left; }
 
-			@media screen and (max-width: 940px) {
-				h1 { text-align: center; }
-				header { position: static; padding: 40px 0 0 0; }
-				#wrap0 { padding: 0 20px; }
-				ul.header_list { margin: 0 auto; width: 300px; padding: 0 0 0 1em; }
-				ul.header_list li span { font-weight: bold; width: 140px; display: block; float:left; }
-				ul.header_list li:last-child { margin: 0 0 0 140px; }
-			}
 
-			@media screen and (max-width: 758px) {
-			}
-
-			@media screen and (max-width: 335px) {
-				#wrap0 { width: 300px; }
-			}
 
 			@media print {
 				body { background: #fff!important; }
 			}
 		</style>
 	</head>
-	
+
 	<body>
 		<div id="wrap0">
-			<header>
+
+			<address>
 				<h1>Tri M. Nguyen</h1>
+
 				<ul class="header_list">
 					<li><span>Adresse:</span> Odd Brochmannsvei 149</li>
 					<li><span>Fødselsdato:</span> 18. mars 1990</li>
 					<li><span>Tlf.:</span> 466 93 738</li>
 					<li><span>Email:</span> mail@trimn.net</li>
-					<li><a href="http://twitter.com/name/">Twitter</a><br>
-							<a href="http://no.linkedin.com/in/name">LinkedIn</a><br>
-							<a href="http://github.com/name">Github</a></li>
+					<li>
+						<span>Other:</span>
+						<ul>
+							<li><a href="http://twitter.com/name/">Twitter</a></li>
+							<li><a href="http://no.linkedin.com/in/name">LinkedIn</a></li>
+							<li><a href="http://github.com/name">Github</a></li>
+						</ul>
+					</li>
 				</ul>
-			</header>
+			</address>
 
-			<div id="wrap1">
-				<section id="education"></section>
-				<section id="work"></section>
-				<section id="other"></section>
+			<section id="education"></section>
+			<section id="work"></section>
+			<section id="other"></section>
 
-				<section id="qualifications">
-					<h2><span>Kvalifikasjoner</span></h2>
-					<div class="non_list_content">
-						<h4>Operativsystemer</h4>
-						<p>Godt kjent med <strong>Mac OS X</strong>, <strong>Windows</strong> og <strong>Linux</strong> </p>
-					
-						<h4>Språk</h4>
-						<ul>
-							<li>JavaScript</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Objective C</li>
-							<li>Perl</li>
-							<li>Java</li>
-							<li>PHP</li>
-							<li>Python (kjent og jobbet med, men lite brukt)</li>
-							<li>C# (kjent og jobbet med, men lite brukt)</li>
-						</ul>
-						
-						<h4>Språk, muntlig</h4>
-						<ul>
-							<li>Norsk (Flytende)</li>
-							<li>Engelsk (God)</li>
-							<li>Vietnamesisk (God)</li>
-						</ul>
-						
-						<h4>Språk, skriftlig</h4>
-						<ul>
-							<li>Norsk (God)</li>
-							<li>Engelsk (God)</li>
-							<li>Vietnamese (ok)</li>
-						</ul>
-						
-						<h4>Førerkort: klasse B</h4>
-						<h4>Referanser oppgis ved behov</h4>
-					</div>
+			<section id="qualifications">
+				<h2><span>Kvalifikasjoner</span></h2>
+				<div class="non_list_content">
+					<h4>Operativsystemer</h4>
+					<p>Godt kjent med <strong>Mac OS X</strong>, <strong>Windows</strong> og <strong>Linux</strong> </p>
 
-				</section>
-			</div>
+					<h4>Språk</h4>
+					<ul>
+						<li>JavaScript</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Objective C</li>
+						<li>Perl</li>
+						<li>Java</li>
+						<li>PHP</li>
+						<li>Python (kjent og jobbet med, men lite brukt)</li>
+						<li>C# (kjent og jobbet med, men lite brukt)</li>
+					</ul>
+
+					<h4>Språk, muntlig</h4>
+					<ul>
+						<li>Norsk (Flytende)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamesisk (God)</li>
+					</ul>
+
+					<h4>Språk, skriftlig</h4>
+					<ul>
+						<li>Norsk (God)</li>
+						<li>Engelsk (God)</li>
+						<li>Vietnamese (ok)</li>
+					</ul>
+
+					<h4>Førerkort: klasse B</h4>
+					<h4>Referanser oppgis ved behov</h4>
+				</div>
+
+			</section>
 		</div>
-		
+
 		<script>
-		var cv = window.cv || {education:education,work:work,other:other,qualificaitons:{raw:'',items:[]}}
+		var cv = window.cv || { education: education, work: work, other: other, qualificaitons: { raw: '', items: [] } }
 		plug_info(cv)
 
 		function plug_info(o) {
@@ -191,12 +217,16 @@
 				, url = document.createElement('a')
 				, description = document.createElement('p')
 
-				span.innerHTML = data[i]['to'] ? data[i]['from']+' - '+data[i]['to'] : data[i]['from']
+				span.innerHTML = data[i]['to'] ? data[i]['from'] + ' - ' + data[i]['to'] : data[i]['from']
+
 				url.setAttribute('href', data[i]['url'])
-				url.innerHTML = '<h3>'+data[i]['title']+'</h3>'
+				url.innerHTML = '<h3>' + data[i]['title'] + '</h3>'
+
 				description.innerHTML = data[i]['description']
+
 				li.appendChild(span), li.appendChild(url), li.appendChild(description), list.appendChild(li)
 			}
+
 			section.appendChild(list)
 		}
 

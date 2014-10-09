@@ -6,7 +6,7 @@ Flere har spurt meg om å få lov til å benytte seg av disse små kodelinjene f
 
 Per nå er det ikke noe mer sofistikert enn et HTML-dokument du laster ned, redigerer, og sender til din neste arbeidsgiver.
 
-Se eksempel her http://cv.trimn.net/
+Se eksempel på [tmn.io](http://tmn.io/is/professional)
 
 ##Hvor skal jeg starte?
 
